@@ -18,9 +18,9 @@ export async function createData(req, res) {
 }
 export async function setGPSX(req, res) {
   try {
-    const { id, value } = req.body;
+    const { id, value } = req.query;
     if (!id || !value) {
-      return res.status(400).send("Pass correct body");
+      return res.status(400).send("Pass correct query");
     }
     const found = await dataModel.findById(id);
     if (!found) {
@@ -53,9 +53,9 @@ export async function getGPSX(req, res) {
 }
 export async function setGPSY(req, res) {
   try {
-    const { id, value } = req.body;
+    const { id, value } = req.query;
     if (!id || !value) {
-      return res.status(400).send("Pass correct body");
+      return res.status(400).send("Pass correct query");
     }
     const found = await dataModel.findById(id);
     if (!found) {
@@ -73,9 +73,9 @@ export async function setGPSY(req, res) {
 
 export async function setAlarm(req, res) {
   try {
-    const { id, value } = req.body;
+    const { id, value } = req.query;
     if (!id) {
-      return res.status(400).send("Pass correct body");
+      return res.status(400).send("Pass correct query");
     }
     const found = await dataModel.findById(id);
     if (!found) {
@@ -92,9 +92,9 @@ export async function setAlarm(req, res) {
 }
 export async function setDate(req, res) {
   try {
-    const { id, value } = req.body;
+    const { id, value } = req.query;
     if (!id) {
-      return res.status(400).send("Pass correct body");
+      return res.status(400).send("Pass correct query");
     }
     const found = await dataModel.findById(id);
     if (!found) {
@@ -111,9 +111,9 @@ export async function setDate(req, res) {
 }
 export async function setTime(req, res) {
   try {
-    const { id, value } = req.body;
+    const { id, value } = req.query;
     if (!id) {
-      return res.status(400).send("Pass correct body");
+      return res.status(400).send("Pass correct query");
     }
     const found = await dataModel.findById(id);
     if (!found) {
@@ -130,9 +130,9 @@ export async function setTime(req, res) {
 }
 export async function setIgnition(req, res) {
   try {
-    const { id, value } = req.body;
+    const { id, value } = req.query;
     if (!id) {
-      return res.status(400).send("Pass correct body");
+      return res.status(400).send("Pass correct query");
     }
     const found = await dataModel.findById(id);
     if (!found) {
@@ -149,9 +149,9 @@ export async function setIgnition(req, res) {
 }
 export async function setFuel(req, res) {
   try {
-    const { id, value } = req.body;
+    const { id, value } = req.query;
     if (!id) {
-      return res.status(400).send("Pass correct body");
+      return res.status(400).send("Pass correct query");
     }
     const found = await dataModel.findById(id);
     if (!found) {
@@ -168,9 +168,9 @@ export async function setFuel(req, res) {
 }
 export async function setSpeed(req, res) {
   try {
-    const { id, value } = req.body;
+    const { id, value } = req.query;
     if (!id) {
-      return res.status(400).send("Pass correct body");
+      return res.status(400).send("Pass correct query");
     }
     const found = await dataModel.findById(id);
     if (!found) {
