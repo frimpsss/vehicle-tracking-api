@@ -46,9 +46,7 @@ export async function getGPSX(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send({
-      value: found?.gpsX,
-    });
+    res.status(200).send(found?.gpsX);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -198,9 +196,7 @@ export async function getGPSY(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send({
-      value: found?.gpsY,
-    });
+    res.status(200).send(found?.gpsY);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -216,9 +212,7 @@ export async function getAlarm(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send({
-      value: found?.alarm,
-    });
+    res.status(200).send(found?.alarm);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -234,9 +228,7 @@ export async function getDate(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send({
-      value: found?.date,
-    });
+    res.status(200).send(found?.date);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -253,9 +245,7 @@ export async function getTime(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send({
-      value: found?.time,
-    });
+    res.status(200).send(found?.time);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -272,9 +262,7 @@ export async function getIgnition(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send({
-      value: found?.ignition,
-    });
+    res.status(200).send(found?.ignition);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -290,9 +278,7 @@ export async function getFuel(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send({
-      value: found?.fuel,
-    });
+    res.status(200).send(found?.fuel);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -309,9 +295,7 @@ export async function getSpeed(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send({
-      value: found?.speed,
-    });
+    res.status(200).send(found?.speed);
   } catch (error) {
     return res.status(500).send(String(error));
   }
