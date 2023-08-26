@@ -12,7 +12,7 @@ app.use(express.json())
 const PORT = process.env.PORT || 3000
 
 app.all("/", (req, res) => {
-    return res.send('Server running')
+    return res.status(200).send('Server running')
 })
 
 app.use('/api', routes)

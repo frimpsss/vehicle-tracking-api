@@ -46,8 +46,9 @@ export async function getGPSX(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send(found?.gpsX);
+    res.status(200).send(String(found.gpsX));
   } catch (error) {
+    console.log(error);
     return res.status(500).send(String(error));
   }
 }
@@ -196,7 +197,7 @@ export async function getGPSY(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send(found?.gpsY);
+    res.status(200).send(String(found?.gpsY));
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -212,7 +213,7 @@ export async function getAlarm(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send(found?.alarm);
+    res.status(200).send(String(found.alarm));
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -228,7 +229,7 @@ export async function getDate(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send(found?.date);
+    res.status(200).send(String(found.date));
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -245,7 +246,7 @@ export async function getTime(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send(found?.time);
+    res.status(200).send(String(found?.time));
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -262,7 +263,7 @@ export async function getIgnition(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send(found?.ignition);
+    res.status(200).send(String(found?.ignition));
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -278,7 +279,7 @@ export async function getFuel(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send(found?.fuel);
+    res.status(200).send(String(found?.fuel));
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -295,7 +296,7 @@ export async function getSpeed(req, res) {
       return res.status(404).send("not found");
     }
 
-    res.status(200).send(found?.speed);
+    res.status(200).send(String(found?.speed));
   } catch (error) {
     return res.status(500).send(String(error));
   }
