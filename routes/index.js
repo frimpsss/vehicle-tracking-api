@@ -24,34 +24,34 @@ const Router = express.Router();
 Router.post("/init", createData);
 
 // gps x
-Router.patch("/gpsx", setGPSX);
+Router.get("set/gpsx", setGPSX);
 Router.get("/gpsx", getGPSX);
 
 //gps y
-Router.patch("/gpsy", setGPSY);
+Router.get("set/gpsy", setGPSY);
 Router.get("/gpsy", getGPSY);
 
 //alarm
-Router.patch("/alarm", setAlarm);
+Router.get("set/alarm", setAlarm);
 Router.get("/alarm", getAlarm);
 
 //date
-Router.patch("/date", setDate);
+Router.get("set/date", setDate);
 Router.get("/date", getDate);
 
 //time
-Router.patch("/time", setTime);
+Router.get("set/time", setTime);
 Router.get("/time", getTime);
 
 //ignition
-Router.patch("/ignition", setIgnition);
+Router.get("set/ignition", setIgnition);
 Router.get("/ignition", getIgnition);
 
 //fuel
-Router.patch("/fuel", setFuel);
+Router.get("set/fuel", setFuel);
 Router.get("/fuel", getFuel);
 
 //speed
-Router.patch("/speed", setSpeed);
+Router.get("set/speed", setSpeed);
 Router.get("/speed", getSpeed);
 export default Router;
