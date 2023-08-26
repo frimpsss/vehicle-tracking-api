@@ -30,7 +30,7 @@ export async function setGPSX(req, res) {
       gpsX: value,
     });
 
-    res.status(200).send("Updated");
+    res.status(200).send(200);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -66,7 +66,7 @@ export async function setGPSY(req, res) {
       gpsY: value,
     });
 
-    res.status(200).send("Updated");
+    res.status(200).send(200);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -86,7 +86,7 @@ export async function setAlarm(req, res) {
       alarm: value,
     });
 
-    res.status(200).send("Updated");
+    res.status(200).send(200);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -105,7 +105,7 @@ export async function setDate(req, res) {
       date: value,
     });
 
-    res.status(200).send("Updated");
+    res.status(200).send(200);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -124,7 +124,7 @@ export async function setTime(req, res) {
       time: value,
     });
 
-    res.status(200).send("Updated");
+    res.status(200).send(200);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -143,7 +143,7 @@ export async function setIgnition(req, res) {
       ignition: value,
     });
 
-    res.status(200).send("Updated");
+    res.status(200).send(200);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -162,7 +162,7 @@ export async function setFuel(req, res) {
       fuel: value,
     });
 
-    res.status(200).send("Updated");
+    res.status(200).send(200);
   } catch (error) {
     return res.status(500).send(String(error));
   }
@@ -181,7 +181,7 @@ export async function setSpeed(req, res) {
       speed: value,
     });
 
-    res.status(200).send("Updated");
+    res.status(200).send(200);
   } catch (error) {
     return res.status(500).send(String(error));
   }
