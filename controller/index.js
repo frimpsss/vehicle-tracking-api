@@ -66,7 +66,7 @@ export async function setGPSY(req, res) {
       gpsY: value,
     });
 
-    res.status(200).send(200);
+    res.status(200).send(String(2));
   } catch (error) {
     return res.status(500).send(String(error));
   }

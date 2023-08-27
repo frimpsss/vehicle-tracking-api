@@ -15,7 +15,7 @@ app.all("/", (req, res) => {
     return res.status(200).send('Server running')
 })
 
-app.use('/api', routes)
+app.use(routes)
 
 
 mongoose.connection.on("connected", () => {
